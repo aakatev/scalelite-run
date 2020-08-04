@@ -51,7 +51,8 @@ services:
       - scalelite-api
 
   scalelite-api:
-    image: ${SCALELITE_REPO:-blindsidenetwks}/scalelite:${SCALELITE_TAG:-v1}-api
+    #image: ${SCALELITE_REPO:-blindsidenetwks}/scalelite:${SCALELITE_TAG:-v1}-api
+    image: aakatev/scalelite:v0-api
     container_name: scalelite-api
     restart: unless-stopped
     ports:
